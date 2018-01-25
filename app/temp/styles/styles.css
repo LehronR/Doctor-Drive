@@ -132,12 +132,22 @@ header .header-btns .more-info-btn a {
 .photoOpts {
   position: absolute;
   bottom: 0;
+  background-color: #000;
 }
 
 .photoOpts .photoStyle img {
-  height: 8rem;
+  height: 9rem;
   width: 25%;
   float: left;
   display: block;
-  background: linear-gradient(rgba(0,0,0,7), rgba(0,0,0,.7);
+  opacity: .2;
+}
+
+.photoOpts .photoStyle img:hover {
+  opacity: 1;
+  transform: translate(0,-2rem);
+  border: solid 1px #ea9522;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: all .3s ease-out;
 }
